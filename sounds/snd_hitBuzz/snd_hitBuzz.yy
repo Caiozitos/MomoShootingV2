@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_hitBuzz",
+  "audioGroupId":{
+    "name":"grpPlayerHit",
+    "path":"audiogroups/grpPlayerHit",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.030187,
+  "name":"snd_hitBuzz",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Sons/Player.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_hitBuzz.mp3",
+  "type":0,
+  "volume":1.0,
+}

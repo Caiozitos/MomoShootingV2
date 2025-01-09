@@ -1,0 +1,2 @@
+instance_destroy(mainWindow)
+instance_destroy(id)

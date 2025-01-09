@@ -11,8 +11,8 @@
   "name":"obj_gun",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Player",
+    "path":"folders/Objetos/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gunPistol",
-    "path":"sprites/spr_gunPistol/spr_gunPistol.yy",
+    "name":"spr_gunBangbang",
+    "path":"sprites/spr_gunBangbang/spr_gunBangbang.yy",
   },
   "spriteMaskId":null,
   "visible":true,

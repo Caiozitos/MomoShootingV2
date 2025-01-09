@@ -1,3 +1,4 @@
+if paused = false{
 #region Pegando as keybinds
 
 	// Abrindo o arquivo com as binds
@@ -19,10 +20,31 @@
 	inputX = keyboard_check(keyRight_) - keyboard_check(keyLeft_)
 	inputY = keyboard_check(keyDown_) - keyboard_check(keyUp_)
 	
-	// Movimentando o personagem
+	// Movimentando o personagem ---- PC
 	x += inputX * global.statSpeed
 	y += inputY * global.statSpeed
 	
+	// Movimentando o personagem ---- ANDROID
+	if os_type = os_android{
+		with obj_joystick{
+			if alavancaX != x and alavancaY != y{
+				other.sprite_index = global.hatSpriteRun
+				other.direction = point_direction(x,y,alavancaX,alavancaY)
+				other.speed = global.statSpeed
+				if alavancaX <= x{
+					other.image_xscale = -1
+				}
+				else{
+					other.image_xscale = 1
+				}
+			}
+			else{
+				other.speed = 0
+				other.direction = 0
+				other.sprite_index = global.hatSpriteIdle
+			}
+		}
+	}
 #endregion
 #region Mudnado o sprite
 if obj_momo.sprite_index = spr_momoRun{
@@ -34,4 +56,12 @@ else{
 
 image_xscale = obj_momo.image_xscale
 #endregion
+#region Variáveis gerais de polimento
 depth = obj_momo.depth - 200
+image_blend = obj_momo.image_blend
+if os_type = os_android{
+	x = obj_momo.x
+	y = obj_momo.y
+}
+#endregion
+}

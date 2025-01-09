@@ -1,3 +1,4 @@
+if paused = false{
 #region Pegando as keybinds
 
 	// Abrindo o arquivo com as binds
@@ -19,13 +20,35 @@
 	inputX = keyboard_check(keyRight_) - keyboard_check(keyLeft_)
 	inputY = keyboard_check(keyDown_) - keyboard_check(keyUp_)
 	
-	// Movimentando o personagem
+	// Movimentando o personagem ---- PC
 	x += inputX * global.statSpeed
 	y += inputY * global.statSpeed
 	
+	// Movimentando o personagem ---- ANDROID
+	if os_type = os_android{
+		with obj_joystick{
+			if alavancaX != x and alavancaY != y{
+				other.sprite_index = spr_momoRun
+				other.direction = point_direction(x,y,alavancaX,alavancaY)
+				other.speed = global.statSpeed
+				if alavancaX <= x{
+					other.image_xscale = 1
+				}
+				else{
+					other.image_xscale = -1
+				}
+			}
+			else{
+				other.speed = 0
+				other.direction = 0
+				other.sprite_index = spr_momoIdle
+			}
+		}
+	}
 #endregion
 #region Sprites
-
+	
+	if os_type != os_android{
 	// Mudando entre o sprite de andar e ficar parado
 	if inputX != 0 or inputY != 0{
 		sprite_index = spr_momoRun
@@ -38,4 +61,16 @@
 	if inputX != 0{
 	image_xscale = -inputX
 	}
+	}
+	
+	depth = -y
 #endregion
+#region Morrendo
+	if global.statHp <= 0{
+		global.deadX = x
+		global.deadY = y
+		room_goto(rm_gameOver)
+	}
+#endregion
+}
+
