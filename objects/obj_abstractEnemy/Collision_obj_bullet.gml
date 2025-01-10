@@ -20,4 +20,11 @@ audio_play_sound(snd_bulletHit,1,0)
 audio_play_sound(hitSound,1,0)
 
 // Feedback de dano
-instance_create_layer(x,y,"lay_damageFeedback",obj_damageFeedback,{dad: id, text:round(other.damage)})
+if other.critical = true{
+	var col = c_orange
+	var crit = true
+}else{
+	var col = c_white
+	var crit = false
+}
+instance_create_layer(x,y,"lay_damageFeedback",obj_damageFeedback,{dad: id, text:round(other.damage), color: col, critical: crit})

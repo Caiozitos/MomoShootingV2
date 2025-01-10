@@ -19,6 +19,7 @@
   "height":768,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"69bc0d0c-007f-4841-b1b5-0c701303eb66","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"69bc0d0c-007f-4841-b1b5-0c701303eb66","opacity":21.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"8bd9794f-a6c7-4945-9077-31c5eeda7abd","blendMode":0,"displayName":"default","isLocked":false,"name":"8bd9794f-a6c7-4945-9077-31c5eeda7abd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_backgroundStreet",
