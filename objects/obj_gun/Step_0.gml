@@ -2,7 +2,7 @@ if paused = false{
 #region Atributos
 
 	// Tecla de trocar de arma
-	var _binds = file_text_open_read("keybinds.ini")
+	var _binds = file_text_open_read(working_directory + "keybinds.ini")
 	repeat(4){
 		file_text_readln(_binds)
 	}

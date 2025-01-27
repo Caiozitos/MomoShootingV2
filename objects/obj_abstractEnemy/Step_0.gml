@@ -1,7 +1,7 @@
 #region Comportamento
 // Perseguindo o personagem
 direction = point_direction(x,y,obj_momo.x,obj_momo.y)
-speed = moveSpeed
+speed = moveSpeed * speedModifier
 if x - obj_momo.x < 0{
 	image_xscale = -1
 }

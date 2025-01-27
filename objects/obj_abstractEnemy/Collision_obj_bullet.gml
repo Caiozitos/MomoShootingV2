@@ -4,6 +4,7 @@ hp -= other.damage
 // Efeito de hitflash
 hitFlash = true
 hitFlashTimer = 5
+scr_freeze(8)
 
 // Destruindo a bala
 instance_destroy(other)

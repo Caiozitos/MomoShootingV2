@@ -1,5 +1,10 @@
 image_angle = direction
-critical = true
+if critical = false{
+	var critValue = irandom_range(1,100)
+	if critValue <= global.statCritic{
+		critical = true
+	}
+}
 if critical = true{
 	damage *= 2
 	audio_stop_sound(snd_enemyExplosion)

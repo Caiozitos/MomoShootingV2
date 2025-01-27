@@ -13,7 +13,7 @@
   "name":"snd_enemyExplosion",
   "parent":{
     "name":"Enemies",
-    "path":"folders/Sons/Enemies.yy",
+    "path":"folders/Objetos/Player/Sons/Enemies.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

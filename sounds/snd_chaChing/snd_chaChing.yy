@@ -13,7 +13,7 @@
   "name":"snd_chaChing",
   "parent":{
     "name":"Menu",
-    "path":"folders/Sons/Menu.yy",
+    "path":"folders/Objetos/Player/Sons/Menu.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -1,4 +1,4 @@
-if touchIndicator = -1{
+if touchIndicator = -1 or instance_exists(obj_neneShop){
 	exit}
 else{
 	direcao = point_direction(x, y, touchIndicator.x,touchIndicator.y);

@@ -1,3 +1,8 @@
+#region Limites
+if global.statHp > global.statMaxHp{
+	global.statHp = global.statMaxHp
+}
+#endregion
 #region Watcher
 for (var i = 0; i < 5; i += 1){
 	if device_mouse_check_button_pressed(i, mb_any){

@@ -10,3 +10,15 @@ hitFlashTimer -= 1
 if hitFlashTimer <= 0{
 	hitFlash = false
 }
+
+#region Efeitos
+switch effect{
+	case "None":
+		image_blend = c_white
+	case "Slow":
+		image_blend = c_gray
+	case "Burn":
+		image_blend = c_orange
+		draw_sprite_ext(spr_LighterRun,image_index,x,y,sprite_width/100,sprite_height/100,0,c_white,1)
+}
+#endregion

@@ -1,8 +1,8 @@
-if paused = false{
+ if paused = false{
 #region Pegando as keybinds
 
 	// Abrindo o arquivo com as binds
-	var arquivoBinds_ = file_text_open_read("keybinds.ini")
+	var arquivoBinds_ = file_text_open_read(working_directory + "keybinds.ini")
 
 	// Definindo cada tecla com base no arquivo de binds
 	var keyLeft_ = file_text_read_string(arquivoBinds_) file_text_readln(arquivoBinds_)
@@ -73,4 +73,6 @@ if paused = false{
 	}
 #endregion
 }
-
+if file_exists("itemsGlobal.ini"){
+	show_debug_message("file not found")
+}

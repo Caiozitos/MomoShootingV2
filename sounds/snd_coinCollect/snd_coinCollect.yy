@@ -13,7 +13,7 @@
   "name":"snd_coinCollect",
   "parent":{
     "name":"Items",
-    "path":"folders/Sons/Items.yy",
+    "path":"folders/Objetos/Player/Sons/Items.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
