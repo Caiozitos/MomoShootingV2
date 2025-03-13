@@ -13,7 +13,7 @@
   "name":"snd_pistolShot",
   "parent":{
     "name":"Guns",
-    "path":"folders/Objetos/Player/Sons/Guns.yy",
+    "path":"folders/Sons/Guns.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

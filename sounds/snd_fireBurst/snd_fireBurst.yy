@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_fireBurst",
+  "audioGroupId":{
+    "name":"grpMain",
+    "path":"audiogroups/grpMain",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.91425,
+  "name":"snd_fireBurst",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Sons/Items.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_fireBurst.mp3",
+  "type":0,
+  "volume":1.0,
+}

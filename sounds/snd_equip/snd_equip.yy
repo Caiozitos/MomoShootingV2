@@ -13,7 +13,7 @@
   "name":"snd_equip",
   "parent":{
     "name":"Player",
-    "path":"folders/Objetos/Player/Sons/Player.yy",
+    "path":"folders/Sons/Player.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

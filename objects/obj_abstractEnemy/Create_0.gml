@@ -21,5 +21,5 @@ hitboxCreated = false
 alarm[0] = 40 // Hitbox
 textAlpha = 1
 speedModifier = 1
-effect = "Burn"
-aksdhjadsadh
+effect = "None"
+effectAlarm = irandom_range(0,60)

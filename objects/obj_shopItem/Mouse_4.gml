@@ -14,8 +14,13 @@ if global.money >= chosenItem.cost and itemBought = false{
 		case "Apple":
 			global.statMaxHp += 3
 			global.statHp += 2
+			break;
 			
 		case "Coffee":
+			global.statShotRate += 0.25
+			global.statSpeed += 5
+			break;
+			
 		
 	}
 	// Definindo os nomes dos sprites

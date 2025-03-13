@@ -73,6 +73,3 @@
 	}
 #endregion
 }
-if file_exists("itemsGlobal.ini"){
-	show_debug_message("file not found")
-}

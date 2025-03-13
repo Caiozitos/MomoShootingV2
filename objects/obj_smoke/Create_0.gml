@@ -1,4 +1,4 @@
-if sprite_index = spr_smokePuff{
+if sprite_index = spr_smokePuff and image_blend = c_white{
 	x = obj_momo.x + 5 * obj_momo.image_xscale
 	y = obj_momo.y + 23
 }
