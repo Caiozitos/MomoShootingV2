@@ -1,16 +1,16 @@
 {
   "$GMSound":"",
-  "%Name":"snd_fireBurst",
+  "%Name":"snd_lighter",
   "audioGroupId":{
-    "name":"grpMain",
-    "path":"audiogroups/grpMain",
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.12325,
-  "name":"snd_fireBurst",
+  "duration":0.888125,
+  "name":"snd_lighter",
   "parent":{
     "name":"Items",
     "path":"folders/Sons/Items.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_fireBurst.mp3",
+  "soundFile":"snd_lighter.mp3",
   "type":0,
   "volume":1.0,
 }

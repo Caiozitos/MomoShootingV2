@@ -22,7 +22,7 @@ function scr_dealDamage(){
 		if scr_searchItem("Lighter"){
 			if !audio_is_playing(snd_fireBurst){
 				scr_particleExplosion(spr_fireParticle,15,8,0.03,0.1,c_white)
-				audio_play_sound(snd_fireBurst,10,0)
+				audio_play_sound(snd_lighter,10,0)
 			}
 			effect = "Burn"
 		}

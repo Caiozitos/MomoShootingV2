@@ -31,6 +31,9 @@ switch effect{
 			hp -= dmg
 			
 			// Causando dano
+			if !audio_is_playing(snd_fireBurst){
+				audio_play_sound(snd_fireBurst,2,0,0.4)
+			}
 			instance_create_depth(x,y,depth,obj_damageFeedback,{text: dmg,color:image_blend})
 			scr_particleExplosion(spr_smokePuff,4,8,0.08,0.06,c_dkgrey)
 			

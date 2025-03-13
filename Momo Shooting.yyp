@@ -98,6 +98,7 @@
     {"id":{"name":"snd_fireBurst","path":"sounds/snd_fireBurst/snd_fireBurst.yy",},},
     {"id":{"name":"snd_hitBuzz","path":"sounds/snd_hitBuzz/snd_hitBuzz.yy",},},
     {"id":{"name":"snd_jump","path":"sounds/snd_jump/snd_jump.yy",},},
+    {"id":{"name":"snd_lighter","path":"sounds/snd_lighter/snd_lighter.yy",},},
     {"id":{"name":"snd_pistolShot","path":"sounds/snd_pistolShot/snd_pistolShot.yy",},},
     {"id":{"name":"snd_playerHit","path":"sounds/snd_playerHit/snd_playerHit.yy",},},
     {"id":{"name":"snd_shotgunShoot","path":"sounds/snd_shotgunShoot/snd_shotgunShoot.yy",},},
