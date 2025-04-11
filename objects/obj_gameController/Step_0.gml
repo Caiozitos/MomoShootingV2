@@ -2,6 +2,8 @@
 if global.statHp > global.statMaxHp{
 	global.statHp = global.statMaxHp
 }
+
+global.money = round(global.money)
 #endregion
 #region Watcher
 for (var i = 0; i < 5; i += 1){

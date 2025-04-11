@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_rockHit",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.365714,
+  "name":"snd_rockHit",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/Sons/Enemies.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_rockHit.ogg",
+  "type":0,
+  "volume":1.0,
+}

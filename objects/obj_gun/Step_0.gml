@@ -1,6 +1,6 @@
 if paused = false{
 #region Atributos
-
+	if os_type = os_windows{
 	// Tecla de trocar de arma
 	var _binds = file_text_open_read(working_directory + "keybinds.ini")
 	repeat(4){
@@ -8,6 +8,10 @@ if paused = false{
 	}
 	var keySwap = file_text_read_real(_binds)
 	file_text_close(_binds)
+	}
+	else{
+		var keySwap = vk_tab
+	}
 
 	// Atribuindo valores diferentes para cada arma
 	switch global.currentGun{
@@ -15,8 +19,7 @@ if paused = false{
 		// Pistola
 		case "Bangbang":
 			var gunDistance_ = 45
-			var shotCooldown = 10
-			var soundEffect = snd_pistolShot
+			var shotCooldown = 12
 			var bulletDamage = global.statDamage
 			var gunSprite = spr_gunBangbang
 			var screenshakeValue = 6
@@ -25,13 +28,12 @@ if paused = false{
 			var recoil = 1
 			var class = "Pistol"
 			var sound = snd_pistolShot
-			var shake = 5
+			var shake = 3
 			break;
 			
 		case "Steelhowl":
 			var gunDistance_ = 65
 			var shotCooldown = 20
-			var soundEffect = snd_pistolShot
 			var bulletDamage = global.statDamage * 0.5
 			var gunSprite = spr_gunSteelhowl
 			var screenshakeValue = 6
@@ -41,6 +43,21 @@ if paused = false{
 			var class = "Shotgun"
 			var sound = snd_shotgunShoot
 			var shake = 15
+			break;
+			
+		case "Blindrage":
+			var gunDistance_ = 60
+			var shotCooldown = 5
+			var soundEffect = snd_pistolShot
+			var bulletDamage = global.statDamage * 0.20
+			var gunSprite = spr_gunBlindrage
+			var screenshakeValue = 3
+			var condition = mouse_check_button(mb_left)
+			var bulletNumber = 1
+			var recoil = 15
+			var class = "Machine Gun"
+			var sound = snd_uziShot
+			var shake = 3
 			break;
 	}
 
@@ -85,7 +102,7 @@ if paused = false{
 	if condition and canShoot{
 		image_index = 1				// Sprite de tiro
 		alarm[0] = 6				// Resetando o sprite
-		alarm[1] = shotCooldown		// Cooldown de tiro
+		alarm[1] = shotCooldown / max(global.statShotRate, 0.01);
 		audio_play_sound(sound,0,0)
 		scr_screenshake(shake,5)
 		
@@ -100,8 +117,8 @@ if paused = false{
 			
 			
 		// Distorcendo
-		image_xscale = random_range(1.5,2)
-		image_yscale = random_range(1.5,2)
+		image_xscale = random_range(1.2,1.5) * sign(image_xscale)
+		image_yscale = random_range(1.2,1.5) * sign(image_yscale)
 		}
 	
 		canShoot = false
@@ -109,7 +126,7 @@ if paused = false{
 	
 #endregion
 #region Mudando a arma
-	if keyboard_check_pressed(keySwap){
+	if keyboard_check_pressed(keySwap) and array_length(global.equippedGuns) > 1{
 		audio_stop_sound(snd_equip)
 		audio_play_sound(snd_equip,0,0)
 		if global.currentGun = global.equippedGuns[0]{

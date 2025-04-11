@@ -1,6 +1,6 @@
  if paused = false{
 #region Pegando as keybinds
-
+	if os_type = os_windows{
 	// Abrindo o arquivo com as binds
 	var arquivoBinds_ = file_text_open_read(working_directory + "keybinds.ini")
 
@@ -12,7 +12,7 @@
 
 	// Fechando o arquivo
 	file_text_close(arquivoBinds_)
-	
+	}
 #endregion
 #region Movimento
 	

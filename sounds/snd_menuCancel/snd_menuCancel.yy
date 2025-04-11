@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_menuCancel",
+  "audioGroupId":{
+    "name":"grpMain",
+    "path":"audiogroups/grpMain",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.20898,
+  "name":"snd_menuCancel",
+  "parent":{
+    "name":"Menu",
+    "path":"folders/Sons/Menu.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_menuCancel.ogg",
+  "type":0,
+  "volume":1.0,
+}

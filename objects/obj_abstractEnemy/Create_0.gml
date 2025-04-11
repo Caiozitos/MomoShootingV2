@@ -9,6 +9,17 @@ switch type{
 		bloodParticle = spr_bloodParticle
 		bloodColor = make_color_rgb(77, 0, 77)
 		moneyDrop = 3
+		break;
+		
+	case "armoredmaggot":
+		moveSpeed = 0
+		contactDamage = 3
+		hp = 12
+		hitSound = snd_rockHit
+		bloodParticle = spr_bloodParticle
+		bloodColor = make_color_rgb(6, 13, 26)
+		moneyDrop = 3
+		break;
 }
 
 // Iniciando em um frame aleatorio para evitar duplicados

@@ -6,7 +6,7 @@ paused = false
 global.nextWave = false
 var enemySpawn = alarm[1]
 
-alarm[0] = 15 * 60
+alarm[0] = 10 * 60
 alarm[1] = 60
 
 instance_create_depth(-100,625,depth,obj_textBox,{

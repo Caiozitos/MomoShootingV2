@@ -17,9 +17,20 @@ switch effect{
 	case "None":
 		image_blend = c_white
 		break;
-		
+	
+	case "Blind":
+		speedModifier = 0.75
+		draw_sprite_ext(spr_blindEffect,image_index,x,y,sprite_width/100,sprite_height/100,0,c_white,1)
+		break;
+	
 	case "Slow":
 		image_blend = c_gray
+		speedModifier = 0.4
+		draw_sprite_ext(spr_sleepEffect,image_index,x,y,sprite_width/100,sprite_height/100,0,c_white,1)
+		if effectAlarm <= 0{
+			// Reiniciando o pingelo
+			effectAlarm = 90
+		}
 		break;
 		
 	case "Burn":
@@ -42,4 +53,5 @@ switch effect{
 		}
 		break;
 }
+
 #endregion

@@ -1,13 +1,15 @@
 #region Comportamento
 // Perseguindo o personagem
+if effect != "Blind"{
 direction = point_direction(x,y,obj_momo.x,obj_momo.y)
-speed = moveSpeed * speedModifier
 if x - obj_momo.x < 0{
 	image_xscale = -1
 }
 else{
 	image_xscale = 1
 }
+}
+speed = moveSpeed * speedModifier
 
 // Mantendo a depth
 depth = -y
@@ -17,6 +19,7 @@ if !instance_exists(other){
 	return
 }
 #endregion
+
 #region Colisão
 // Verifica se há colisão com o inimigo
 var colisor = instance_place(x, y, all);
@@ -38,6 +41,7 @@ if (colisor != noone && object_get_parent(colisor.object_index) == obj_abstractE
     }
 }
 #endregion
+
 #region Morrendo
 if hp <= 0{
 	instance_destroy()
