@@ -1,4 +1,4 @@
-if x > room_width or x < 0 or y > room_height or y < 0{
+if x > room_width * 2 or x < -room_width or y > room_height * 2 or y < -room_height{
 	instance_destroy()
 }
 if critical = true{
@@ -9,3 +9,5 @@ instance_create_depth(x,y,depth+10,obj_smoke,{
 	image_angle: irandom_range(0,360)
 })
 }
+
+image_angle = direction

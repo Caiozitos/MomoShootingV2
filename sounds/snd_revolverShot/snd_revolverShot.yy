@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_revolverShot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.018776,
+  "name":"snd_revolverShot",
+  "parent":{
+    "name":"Guns",
+    "path":"folders/Sons/Guns.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_revolverShot.ogg",
+  "type":0,
+  "volume":1.0,
+}

@@ -7,5 +7,5 @@ if particle = true{
 	direction = irandom_range(0,360)
 	image_angle = irandom_range(0,360)
 	image_index = random_range(0,2)
-	speed = partSpeed
+	speed = random_range(partSpeed*0.6,partSpeed*1.2)
 }

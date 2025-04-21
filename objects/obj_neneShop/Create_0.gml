@@ -4,7 +4,7 @@ with all{
 x = 683
 y = 384
 freeze = false
-
+depth=-9999
 // Criando os botões
 var colorButton = make_color_rgb(252,218,241)
 instance_create_depth(350,710,depth-1,obj_backButton,{mainWindow: id, image_blend: colorButton})

@@ -1,7 +1,13 @@
 image_angle = direction
 if critical = false{
 	var critValue = irandom_range(1,100)
-	if critValue <= global.statCritic{
+	if global.currentGun = "Hexcrash"{
+		var critSpan = 0
+	}
+	else{
+		var critSpan = global.statCritic
+	}
+	if critValue <= critSpan or obj_gun.revolverShots = 5{
 		critical = true
 	}
 }
@@ -15,6 +21,15 @@ if critical = true{
 alarm[0] = 1
 
 // Efeitos de itens
+depth = -9999
+if global.currentGun = "BCK-2U"{
+	bouncy = true
+}
+if bouncy = true{
+	bounces = 0
+	move_bounce_solid(false)
+}
+
 if scr_searchItem("Deodorant") {
     if irandom_range(1,100) <= 15 {
         if scr_searchItem("Lighter") {
