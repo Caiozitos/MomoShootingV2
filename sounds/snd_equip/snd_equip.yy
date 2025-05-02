@@ -2,8 +2,8 @@
   "$GMSound":"",
   "%Name":"snd_equip",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"grpPlayerHit",
+    "path":"audiogroups/grpPlayerHit",
   },
   "bitDepth":1,
   "bitRate":128,

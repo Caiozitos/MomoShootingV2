@@ -52,7 +52,7 @@ if paused = false {
 		case "BCK-2U":
 			var gunDistance_ = 45
 			var shotCooldown = 13
-			var bulletDamage = global.statDamage * 0.90
+			var bulletDamage = global.statDamage
 			var gunSprite = spr_gunBCK2U
 			var condition = mouse_check_button_pressed(mb_left)
 			var bulletNumber = 1
@@ -74,10 +74,10 @@ if paused = false {
 			}
 			var gunDistance_ = 55
 			var shotCooldown = 20
-			var bulletDamage = global.statDamage * 0.75 + (global.statDamage * 0.1) * revolverShots
+			var bulletDamage = global.statDamage * 0.90 + (global.statDamage * 0.1) * revolverShots
 			var gunSprite = spr_gunHexcrash
 			var bulletNumber = 1
-			var recoil = 2 + revolverShots * 0.5
+			var recoil = 2 + revolverShots 
 			var sound = snd_revolverShot
 			var shake = 5.5 * revolverShots
 			image_blend = make_color_rgb(255, 255 - 50 * revolverShots, 255 - 50 * revolverShots)

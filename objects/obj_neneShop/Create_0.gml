@@ -1,6 +1,7 @@
 with all{
 	paused = true
 }
+audio_group_set_gain(grp_soundtrack,0.4,3000)
 x = 683
 y = 384
 freeze = false

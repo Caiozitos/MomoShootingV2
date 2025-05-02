@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"ost_letItLast",
+  "audioGroupId":{
+    "name":"grp_soundtrack",
+    "path":"audiogroups/grp_soundtrack",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":30.272018,
+  "name":"ost_letItLast",
+  "parent":{
+    "name":"Soundtrack",
+    "path":"folders/Sons/Soundtrack.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ost_letItLast.ogg",
+  "type":0,
+  "volume":1.0,
+}

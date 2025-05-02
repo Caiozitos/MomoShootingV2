@@ -48,3 +48,4 @@ if !file_exists(working_directory + "itemsGlobal.ini") {
 // Iniciando audio groups
 audio_group_load(grpMain)
 audio_group_load(grpPlayerHit)
+audio_group_load(grp_soundtrack)

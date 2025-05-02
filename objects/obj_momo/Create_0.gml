@@ -9,6 +9,7 @@ global.money = 20
 global.playerItems = []
 global.vanityIdle = []
 global.vanityRun = []
+global.foodHpRecover = 2
 paused = false
 
 // Outras variáveis

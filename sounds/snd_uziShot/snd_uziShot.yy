@@ -2,8 +2,8 @@
   "$GMSound":"",
   "%Name":"snd_uziShot",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"grpMain",
+    "path":"audiogroups/grpMain",
   },
   "bitDepth":1,
   "bitRate":128,

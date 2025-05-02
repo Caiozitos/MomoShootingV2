@@ -6,12 +6,22 @@ switch global.currentWave{
 	
 	case 2:
 		global.waveDuration = 12 * 60
-		global.enemyList = [obj_enemyMaggot]
+		global.enemyList = [obj_enemyMaggot, obj_enemyPsychomite]
 		break;
 		
 	case 3:
 		global.waveDuration = 15 * 60
-		global.enemyList = [obj_enemyMaggot, obj_enemyArmoredMaggot]
+		global.enemyList = [obj_enemyMaggot, obj_enemyPsychomite]
+		break;
+		
+	case 4:
+		global.waveDuration = 20 * 60
+		global.enemyList = [obj_enemyPsychomite, obj_enemyBuzzrot]
+		break;
+		
+	case 5:
+		global.waveDuration = 20 * 60
+		global.enemyList = [obj_enemyArmoredMaggot, obj_enemyBuzzrot]
 		break;
 }
 

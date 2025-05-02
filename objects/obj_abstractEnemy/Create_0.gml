@@ -16,9 +16,39 @@ switch type{
 		contactDamage = 3
 		hp = 12
 		hitSound = snd_rockHit
-		bloodParticle = spr_bloodParticle
+		bloodParticle = spr_paperParticle
 		bloodColor = make_color_rgb(6, 13, 26)
 		moneyDrop = 3
+		break;
+		
+	case "buzzrot":
+		moveSpeed = 5
+		contactDamage = 3
+		hp = 8
+		hitSound = snd_alienHit
+		bloodParticle = spr_bloodParticle
+		bloodColor = make_color_rgb(77, 0, 77)
+		moneyDrop = 2
+		break;
+		
+	case "psychomite":
+		moveSpeed = 4
+		contactDamage = 3
+		hp = 5
+		hitSound = snd_alienHit
+		bloodParticle = spr_bloodParticle
+		bloodColor = make_color_rgb(77, 0, 77)
+		moneyDrop = 1
+		break;
+		
+	case "gliconid":
+		moveSpeed = 5
+		contactDamage = 4
+		hp = 10
+		hitSound = snd_alienHit
+		bloodParticle = spr_bloodParticle
+		bloodColor = make_color_rgb(77, 0, 77)
+		moneyDrop = 1
 		break;
 }
 
@@ -34,3 +64,4 @@ textAlpha = 1
 speedModifier = 1
 effect = "None"
 effectAlarm = irandom_range(0,60)
+dropFood = irandom_range(0,100)

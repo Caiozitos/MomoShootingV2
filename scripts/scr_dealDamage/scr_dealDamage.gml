@@ -13,9 +13,11 @@ function scr_dealDamage(){
 		scr_screenshake(30,10)
 		obj_damageIndicator.image_alpha = 1
 		audio_group_set_gain(grpMain,0.1,0)
+		audio_group_set_gain(grp_soundtrack,0.1,0)
 		audio_play_sound(snd_playerHit,2,0)
 		audio_play_sound(snd_hitBuzz,1,0)
 		audio_group_set_gain(grpMain,1,3000)
+		audio_group_set_gain(grp_soundtrack,1,300)
 		
 	}
 	// Efeitos de itens

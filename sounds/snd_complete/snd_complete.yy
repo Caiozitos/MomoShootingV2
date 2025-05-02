@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_complete",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.653061,
+  "name":"snd_complete",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Sons/Items.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_complete.ogg",
+  "type":0,
+  "volume":1.0,
+}

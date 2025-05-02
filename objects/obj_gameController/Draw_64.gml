@@ -12,8 +12,10 @@ if debug = true{
 	
 	
 	if keyboard_check_pressed(vk_f2){
-		debugText = "[Debug] Flashbang"
-		obj_abstractEnemy.effect = "Blind"
+		debugText = "[Debug] Heal Food"
+		repeat(5){
+			instance_create_depth(obj_momo.x+irandom_range(-100,100),obj_momo.y+irandom_range(-100,100),depth,obj_healingFood)
+		}
 	}
 	
 	draw_text(0,room_height-35,debugText)

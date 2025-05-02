@@ -14,3 +14,11 @@ for (var i = 0; i < 5; i += 1){
 	}
 }
 #endregion
+
+#region Musica
+if variable_global_exists("soundtrack"){
+if !audio_is_playing(global.soundtrack){
+	audio_play_sound(ost_letItLast,1000,1)
+}
+}
+#endregion

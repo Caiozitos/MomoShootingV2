@@ -13,3 +13,4 @@ instance_destroy(obj_inventoryGun)
 global.itemList = []
 global.listaItens = []
 global.listaArmas = []
+audio_group_set_gain(grp_soundtrack,1,1000)
