@@ -10,7 +10,7 @@ draw_sprite(spr_hud,0,0,0)
 var hpDisplay = string(round(global.statHp))+"/"+string(round(global.statMaxHp))
 draw_text(200,23,hpDisplay)
 
-if hpPercentage > 75{
+if hpPercentage >= 75{
 	var heartSprite = spr_heart100
 }
 else if hpPercentage >= 50 and hpPercentage < 75{

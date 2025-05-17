@@ -9,7 +9,7 @@ if effect != "Blind"{
 		else{
 			image_xscale = 1
 		}
-		moveSpeed = 10
+		moveSpeed = 15
 		if target = "Momo"{
 			direction = point_direction(x,y,obj_momo.x,obj_momo.y) + angleMove
 		}
@@ -17,7 +17,7 @@ if effect != "Blind"{
 			direction = point_direction(x,y,obj_healingFood.x+irandom_range(-20,20),obj_healingFood.y+irandom_range(-20,20)) + angleMove
 		}
 	}
-	moveSpeed = lerp(moveSpeed,0,0.05)
+	moveSpeed = lerp(moveSpeed,0,0.1)
 	if alarm[2] <= 0{
 	speed = moveSpeed * speedModifier
 	}

@@ -12,3 +12,7 @@ if particle = true{
 	image_alpha -= fadeSpeed
 	speed = lerp(speed,0,speedLerp)
 }
+
+if image_alpha <= 0{
+	instance_destroy()
+}

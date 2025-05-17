@@ -13,7 +13,7 @@ instance_destroy(other)
 audio_stop_sound(hitSound)
 
 // Efeito da bala
-scr_particleExplosion(bloodParticle,12,15,0.09,0.1,bloodColor)
+scr_particleExplosion(bloodParticle,12,15,0.05,0.1,bloodColor)
 
 // Efeito da bala atingindo
 audio_stop_sound(snd_bulletHit)

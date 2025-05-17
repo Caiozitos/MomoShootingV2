@@ -24,7 +24,7 @@ switch type{
 	case "buzzrot":
 		moveSpeed = 5
 		contactDamage = 3
-		hp = 8
+		hp = 10
 		hitSound = snd_alienHit
 		bloodParticle = spr_bloodParticle
 		bloodColor = make_color_rgb(77, 0, 77)
@@ -32,7 +32,7 @@ switch type{
 		break;
 		
 	case "psychomite":
-		moveSpeed = 4
+		moveSpeed = 5
 		contactDamage = 3
 		hp = 5
 		hitSound = snd_alienHit
@@ -44,10 +44,30 @@ switch type{
 	case "gliconid":
 		moveSpeed = 5
 		contactDamage = 4
-		hp = 10
+		hp = 14
 		hitSound = snd_alienHit
 		bloodParticle = spr_bloodParticle
 		bloodColor = make_color_rgb(77, 0, 77)
+		moneyDrop = 3
+		break;
+		
+	case "tabaphagos":
+		moveSpeed = 3
+		contactDamage = 5
+		hp = 15
+		hitSound = snd_alienHit
+		bloodParticle = spr_bloodParticle
+		bloodColor = make_color_rgb(77, 0, 77)
+		moneyDrop = 3
+		break;
+		
+	case "mimicCoin":
+		moveSpeed = 0
+		contactDamage = 2
+		hp = 10
+		hitSound = snd_coinDrop
+		bloodParticle = spr_coin
+		bloodColor = c_yellow
 		moneyDrop = 1
 		break;
 }

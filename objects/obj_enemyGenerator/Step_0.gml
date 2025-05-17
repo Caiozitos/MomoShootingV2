@@ -1,28 +1,33 @@
 switch global.currentWave{
 	case 1:
-		global.waveDuration = 10 * 60
+		global.waveDuration = 15 * 60
 		global.enemyList = [obj_enemyMaggot]
 		break;
 	
 	case 2:
-		global.waveDuration = 12 * 60
-		global.enemyList = [obj_enemyMaggot, obj_enemyPsychomite]
-		break;
-		
-	case 3:
 		global.waveDuration = 15 * 60
 		global.enemyList = [obj_enemyMaggot, obj_enemyPsychomite]
 		break;
 		
-	case 4:
+	case 3:
 		global.waveDuration = 20 * 60
+		global.enemyList = [obj_enemyMaggot, obj_enemyPsychomite, obj_enemyPsychomite, obj_enemyArmoredMaggot]
+		break;
+		
+	case 4:
+		global.waveDuration = 25 * 60
 		global.enemyList = [obj_enemyPsychomite, obj_enemyBuzzrot]
 		break;
 		
 	case 5:
-		global.waveDuration = 20 * 60
-		global.enemyList = [obj_enemyArmoredMaggot, obj_enemyBuzzrot]
-		break;
+		global.waveDuration = 25 * 60
+		global.enemyList = [obj_enemyBuzzrot, obj_enemyBuzzrot, obj_enemyBuzzrot, obj_enemyGliconid]
+		break
+		
+	case 6:
+	global.waveDuration = 30 * 60
+	global.enemyList = [obj_enemyBuzzrot, obj_enemyGliconid,obj_enemyTabaphagos]
+	break;
 }
 
 

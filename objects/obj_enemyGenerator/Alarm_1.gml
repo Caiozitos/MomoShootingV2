@@ -1,4 +1,4 @@
-var enemyNumber = round(global.currentWave / 4) + 1
+var enemyNumber = round(global.currentWave / 3) + 1
 if alarm[0] > 0{
 repeat(enemyNumber){
 	scr_callEnemy()

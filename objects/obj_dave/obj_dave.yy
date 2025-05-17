@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_trainingDoll",
+  "%Name":"obj_dave",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_trainingDoll",
+  "name":"obj_dave",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_abstractEnemy","path":"objects/obj_abstractEnemy/obj_abstractEnemy.yy",},"propertyId":{"name":"type","path":"objects/obj_abstractEnemy/obj_abstractEnemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"trainingDoll",},
   ],
