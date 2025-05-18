@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":30.272018,
+  "duration":27.245714,
   "name":"ost_letItLast",
   "parent":{
     "name":"Soundtrack",

@@ -5,3 +5,4 @@ else{
 	speed = 0
 	x = room_width/2
 }
+image_alpha = 0.6

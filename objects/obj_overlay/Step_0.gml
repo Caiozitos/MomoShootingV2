@@ -1,4 +1,4 @@
-if place_meeting(x,y,obj_crosshair) or place_meeting(x,y,obj_momo){
+if place_meeting(x,y,obj_crosshair) or place_meeting(x,y,obj_momo) or place_meeting(x,y,obj_abstractEnemy){
 	image_alpha = lerp(image_alpha,0.3,0.1)
 }
 else{

@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_overlayStreet",
   "bboxMode":0,
-  "bbox_bottom":935,
+  "bbox_bottom":375,
   "bbox_left":0,
   "bbox_right":1681,
   "bbox_top":0,
