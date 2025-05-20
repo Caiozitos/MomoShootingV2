@@ -24,7 +24,7 @@ else if hpPercentage < 25{
 }
 
 draw_sprite(heartSprite,image_index,45,50)
-draw_sprite_ext(obj_gun.sprite_index,obj_gun.image_index,1315,50,1,1,0,c_white,1)
+draw_sprite_ext(obj_gun.sprite_index,obj_gun.image_index,1315,50,0.9,0.9,0,c_white,1)
 draw_set_font(fnt_hud)
 draw_text(118,95,global.money)
 draw_set_halign(fa_right)
